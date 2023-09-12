@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      direction: rtl;
+      font-family: 'vazir';
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 3rem;
+
+}
+
+header .progress {
+    width: 100%;
+    height: 10px;
+    background-color: #d6d6d6;
+}
+
+header .progress .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(184,2,216), rgb(255,0,43));
+}
+
+section{
+    margin-top: 150px;
+    padding: 50px 100px;
+
+}
+
+section p {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin:30px 0 50px 0;
+}
+
+
+
+
+   
