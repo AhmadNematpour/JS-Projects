@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .box .imgBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+section .box .imgBox img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .box .imgBox.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+section .box .imgBox.active img {
+  margin: 50px;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+}
+
+section .box .imgBox h2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+section .box .imgBox.active h2 {
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+section .box .imgBox .content {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px;
+    transform: translateY(200px);
+}
+
+section .box .imgBox.active .content {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    transform: translateY(0);
+
+}
+
+section .box .imgBox .content h3 {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

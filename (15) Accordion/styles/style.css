@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.accordion {
+  position: absolute;
+  top: -150px;
+}
+
+.accordion .accordion-title {
+  background: #e6193b;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #740d1e;
+  cursor: pointer;
+}
+
+.accordion .accordion-title::before {
+  content: "+";
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.accordion .accordion-title.active::before {
+  content: "-";
+  margin-left: 16px;
+}
+
+.accordion .accordion-content {
+  background: #d3d3d3;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  padding: 0px 10px;
+}
+
+.accordion .accordion-content:last-child {
+  margin-bottom: 100px;
+}

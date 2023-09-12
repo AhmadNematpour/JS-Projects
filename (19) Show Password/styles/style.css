@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      direction: rtl;
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+
+h1 {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #cc0000;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+position: relative;
+}
+
+.password input {
+    width: 70%;
+    padding: 10px;
+    font-family: 'vazir';
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+.toggle {
+    position: absolute;
+    right: 40px;
+}
+
+.fa-eye-slash {
+    display: none;
+}
+
+.toggle svg {
+    color: #505050;
+    opacity: .7;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.toggle svg:hover {
+opacity: 1;
+}
+
+.hide .fa-eye {
+    display: none;
+}
+
+.hide .fa-eye-slash {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+

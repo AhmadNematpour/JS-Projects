@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: none;
+  }
+
+  body {
+      direction: rtl;
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+
+#open {
+    background: #2180d8;
+    border: 3px solid #2180d8;
+    font-family: 'vazir';
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+#open:hover {
+    background: #fff;
+    color: #2180d8;
+    border-radius: 20px;
+}
+
+.modal_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.modal_container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_container .modal {
+    width: 650px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#close {
+    background: #2180d8;
+    border: 3px solid #2180d8;
+    font-family: 'vazir';
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#close:hover {
+    background: #fff;
+    color: #2180d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
