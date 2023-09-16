@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    box-shadow: -7px 9px 17px 0 #00000017;
+    border-radius: 5px;
+    padding: 20px;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out;
+}
+
+nav.show ul {
+    width: 450px;
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.close {
+    position: absolute;
+    top: 6%;
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 17px 0px #00000017;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.closeBtn {
+    transform: rotate(360deg);
+    background-image: url('../img/close.svg');
+}
+
+
