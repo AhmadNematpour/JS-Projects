@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  height: 100vh;
+}
+
+h1 {
+  position: relative;
+  top: 60px;
+  right: 10%;
+  cursor: pointer;
+  display: inline;
+}
+
+h1::before {
+  content: attr(data-count);
+  position: absolute;
+  top: -12px;
+  right: 17px;
+  width: 20px;
+  height: 20px;
+  background: #c00;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+h1.zero::before {
+  opacity: 1;
+}
+
+section {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  flex-wrap: wrap;
+}
+
+section div {
+  width: 24%;
+  margin-top: 30px;
+  position: relative;
+  padding: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 10px rgba(119, 119, 119, 0.3);
+}
+
+section div img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+section div h6 {
+  padding: 30px;
+  font-size: 18px;
+}
+
+section div h6 span {
+  color: rgb(11, 214, 4);
+  margin-left: 5px;
+}
+
+section div button {
+  width: 100%;
+  border: none;
+  font-family: "vazir";
+  background: #c00;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select {
+  background: #333;
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 60vw;
+  height: 80vh;
+  display: none;
+  overflow-y: auto;
+}
+
+.select.display {
+  display: block;
+}
+
+.select div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  background: rgb(66, 66, 66);
+}
+
+.select div:first-child {
+  margin-top: 0;
+}
+
+.select div img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.select div p {
+  color: #fff;
+  padding: 20px;
+}
+
+.select div h6 {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  font-size: 18px;
+  color: #fff;
+}
+
+.select div h6 span {
+  color: rgb(11, 214, 4);
+  margin-left: 5px;
+}
+
+.select div button {
+  position: absolute;
+  bottom: 10px;
+  right: 80%;
+  background: rgb(0, 161, 224);
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "vazir";
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 18px;
+}
