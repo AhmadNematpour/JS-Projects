@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #30383e;
+}
+
+input, textarea, button {
+    font-family: 'vazir';
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    margin: 100px 0;
+}
+
+form {
+    width: 700px;
+    margin: auto;
+}
+
+form .input-group {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+form .input-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    height: 50px;
+}
+
+form textarea.input-control {
+    height: 100px;
+}
+
+form .text-red {
+    color: #c00;
+}
+
+form .text-orange {
+    color: orange;
+}
+
+form button {
+    border: none;
+    padding: 10px 50px;
+    background: greenyellow;
+    color: #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+
