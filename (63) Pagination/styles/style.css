@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container .title {
+    color: #000;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gallery {
+    float: left;
+    width: 100%;
+}
+
+.gallery-items .item {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.gallery-items .item.hide {
+    display: none;
+}
+
+.gallery-items .item.show {
+    display: block;
+    animation: show .5s ease;
+    -webkit-animation: show .5s ease;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+    }
+100%{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    }
+}
+
+.gallery-items .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-items .item .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 10px;
+} 
+
+.pagination {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.pagination .next,
+.pagination .prev {
+    border: 1px solid #252525;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination .next.disable,
+.pagination .prev.disable {
+    border-color: rgb(180,180,180);
+    color: gray;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
