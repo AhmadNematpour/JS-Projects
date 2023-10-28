@@ -1,0 +1,130 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #333;
+      background-image: linear-gradient(135deg, #000000 0%, #333 48%, #686868 1000%);
+  }
+
+  .video-player {
+    position: relative;
+    overflow: hidden;
+    width: 750px;
+  }
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.player-controls {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    transform: translateY(100%) translateY(-5px);
+    -webkit-transform: translateY(100%) translateY(-5px);
+    -moz-transform: translateY(100%) translateY(-5px);
+    -ms-transform: translateY(100%) translateY(-5px);
+    -o-transform: translateY(100%) translateY(-5px);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    background: rgba(0, 0, 0, .6);
+    flex-wrap: wrap;
+}
+
+.video-player:hover .player-controls {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.play-button {
+    width: 10%;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.time {
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=range] {
+    width: 75%;
+    background: transparent;
+    margin: 0;
+    padding: 0 10px;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    background: #000;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: orangered;
+    width: 10px;
+    height: 10px;
+
+}
+
+.video-progress {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    background: rgba(0,0,0,.6);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.video-progress-fill {
+    background: orangered;
+    height: 100%;
+    width: 0;
+}
+
+
+
+
+
+
+
+
+

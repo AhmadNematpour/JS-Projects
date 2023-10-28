@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <div class="video-player">
+        <video class="video" src="video/1.mp4" poster="img/image.png"></video>
+        <div class="player-controls">
+            <div class="video-progress">
+                <div class="video-progress-fill"></div>
+            </div>
+
+            <button class="play-button" title="play">▶</button>
+            
+            <input type="range" class="volume" min="0" max="1" step=".05" value="1">
+            
+            <div class="time">
+                <span class="current">0:00</span>  /  <span class="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/script.js"></script>
+<script src="js/all.min.js"></script>
+</body>
+</html>
