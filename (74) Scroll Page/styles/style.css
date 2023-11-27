@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#home {
+    background: #aff8db;
+}
+
+#about {
+    background: #ffabab;
+}
+
+#footer {
+    background: #fff5ba;
+}
+
+.nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    padding: 15px;
+}
+
+.nav .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nav .nav-item .nav-label {
+    color: #000;
+    opacity: 0;
+    transition: opacity .1s;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.nav-link:hover ~ .nav-label {
+    opacity: 1;
+}
+
+.nav .nav-item .nav-link {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+.nav .nav-item .nav-link.nav-link-selected {
+    background: #000;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
