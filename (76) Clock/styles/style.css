@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/vazir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/vazir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "vazir";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e45529 50%, #16191e 50%);
+}
+
+.clock {
+  background: #16191e;
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 15px solid #242931;
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 0 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clock img {
+  z-index: 2;
+}
+
+.hand {
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform-origin: bottom;
+
+}
+
+.hour {
+  height: 60px;
+  width: 10px;
+  top: 100px;
+}
+
+.minuts {
+  height: 80px;
+  width: 5px;
+  top: 80px;
+}
+
+.seconds {
+  height: 90px;
+  width: 3px;
+  top: 70px;
+  background: #2987e4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
